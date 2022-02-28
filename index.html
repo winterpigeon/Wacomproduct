@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{background-color:#050A30;}
+       #nav-bar{
+        background-image:linear-gradient(45deg,#05445E,#75E6DA);
+        border-color:aliceblue;
+        border-style:solid;
+        border-radius: 5px;
+        height:5vmax;
+        color:white;
+        display:flex;
+        justify-content: space-between;
+        align-self: center;
+       }
+       .class-container{
+        display:flex;
+        flex-direction: row;
+        padding-left:7vmax;
+        width:80vmax;
+        justify-content:space-between;
+       }
+       
+       .card{
+         display:flex;
+         flex-direction: column;
+         background-color: #05445E;
+         width:25vmax;
+         height:35vmax;
+         border-radius: 5px;
+         border-style: solid;
+         border-color: aliceblue;
+         justify-content: space-around;
+         box-shadow:2px 2px 20px #020520 ;
+       }
+       .card:hover{
+        animation-name: hover-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+
+       }
+       .image img{ width:25vmax;
+        height:17vmax;
+        border-radius: 5px;
+       }
+       .title{
+         display:flex;
+         justify-content: center;
+         color:#75E6DA;
+         font-size: 3vmax;
+         
+       }
+       .des{
+          text-align: center;
+         color:white;
+         font-size:1.5vmax;
+         padding-bottom:10px;
+       }
+       #tabs{
+           display:flex;
+       }
+       h1{
+           font-size:3vmax;
+           display:flex;
+           align-self: center;
+       }
+       a{  color: #050A30;
+           font-size: 2vmax;
+           display:flex;
+           padding-left:2vmax;
+           padding-right:2vmax;
+           padding-top:1.4vmax;
+           justify-content: center;
+       }
+       #form-container{
+           display:flex;
+           flex-direction: row;
+           justify-content: center;
+         
+
+
+       }
+       #Email-field{
+           width:25vmax;
+           height:3vmax;
+       }
+       #Icon-container1{
+         display:flex;
+         color:white;
+         flex-direction:row;
+         
+       }
+       #Icon-container2{
+         display:flex;
+         color:white;
+         flex-direction:row;
+         
+       }
+       #Icon-container3{
+         display:flex;
+         color:white;
+         flex-direction:row;
+         
+       }
+       #Icon{
+           display:flex;
+           color:white;
+           padding-top:3vh;
+           padding-bottom:2vh;
+           padding-left:2vmax;
+           font-size:8vmax;
+       }
+       
+       #Title2{
+           font-size:2vmax;
+           color:white;
+           font-family:serif;
+           font-style: italic;
+           display:flex;
+           flex-direction: row;
+           justify-content: center;
+       }
+       #Icon-container1:hover{
+            animation-name: hover-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+        }
+        
+        #Icon-container2:hover{
+            animation-name: hover-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+        }
+
+        #Icon-container3:hover{
+            animation-name: hover-animation;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;
+            
+        }
+        
+        @keyframes hover-animation {
+            100%{
+                border-style: solid;
+                border-color: #002164;
+                border-width: 3px;
+                background-color: #09C0FA;
+                transform: scale(1.03);
+            }
+        }
+       #Icon-Text1{display:flex;
+        flex-direction:column;
+        color:white; font-size:2vmax;
+        padding-left: 3vmax;
+        padding-top:2vmax;
+       }
+       #Icon-Text2{display:flex;
+        flex-direction:column;
+        color:white; font-size:2vmax;
+        padding-left: 3vmax;
+        padding-top:2vmax;
+       }
+       #Icon-Text3{display:flex;
+        flex-direction:column;
+        color:white; font-size:2vmax;
+        padding-left: 3vmax;
+        padding-top:2vmax;
+       }
+       #Icon-container1{
+        display:flex;
+        flex-direction:row;
+        background-color: #05445E;
+        border-color:aliceblue;
+        border-style:solid;
+        border-radius: 5px;
+       }
+       #Icon-container2{
+        display:flex;
+        flex-direction:row;
+        background-color: #05445E;
+        border-color:aliceblue;
+        border-style:solid;
+        border-radius: 5px;
+       }
+       #Icon-container3{
+        display:flex;
+        flex-direction:row;
+        background-color: #05445E;
+        border-color:aliceblue;
+        border-style:solid;
+        border-radius: 5px;
+       }
+       @media(min-width:770px){
+         #Icon-Text1{
+           font-size:15px;
+         }
+
+       }
+       @media(min-width:770px){
+         #Icon-Text2{
+           font-size:15px;
+         }
+       }
+       @media(min-width:770px){
+         #Icon-Text3{
+           font-size:15px;
+         }
+        }
+         @media(min-width:770px){
+         #Icon{
+           font-size:55px;
+           padding-top:3vh;
+           padding-bottom:2vh;
+
+         }
+       }
+       #Font-Icon-Container1{
+         display: flex;
+         width:80vmax;
+         flex-direction:column;
+       }
+       
+       #Container1{
+        display:flex;
+        padding-top:4vmax;
+        justify-content: center;
+       }
+       #butt{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        border-color: aliceblue;
+       }
+       #YT{
+         display:flex;
+        flex-direction: row;
+        justify-content: center;
+       }
+      
+    </style>
+    <script src="https://kit.fontawesome.com/d7c55f9415.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="nav-bar">
+      <h1 style="padding-left:3vmax;">Wacom</h1>
+        <div id="tabs">
+            <a href="/" target="_blank">Features</a>
+            <a href="/" target="_blank">How it works</a>
+            <a href="/" target="_blank">Pricing</a>
+        </div>
+    </div>
+    <div id="Title2"><h2>The best graphic tablets money can buy</h2></div>
+    <div id="form-container"><form>
+        <label for="Email"></label><br>
+        <input id ="Email-field" type="text" id="Email" name="Email" placeholder="Enter your email here"><br>
+      </form></div>
+      <br> 
+      <div id="butt">
+            <button id="butt" type="button">Get Started</button>
+      </div>      
+      <br>
+      <div id="Container1">
+      <div id="Font-Icon-Container">
+      <div id="Icon-container1">
+          <i id="Icon" class="fa-solid fa-bus"></i>
+         <div id="Icon-Text1"><p1 style="font-size:3vmax; color:#75E6DA; line-height:20%;">Super Fast Delivery</p1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lacinia urna. Duis turpis ante, egestas nec eleifend iaculis, sollicitudin efficitur purus.</p></div></div>
+         <br>
+         <div id="Icon-container2">
+          <i id="Icon" class="fa-solid fa-house-laptop"></i>
+          <div id="Icon-Text2"> <p1 style="font-size:3vmax; color:#75E6DA; line-height:20%;">Purchase On Any Device</p1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lacinia urna. Duis turpis ante, egestas nec eleifend iaculis, sollicitudin efficitur purus.</p></div></div>
+          <br>
+          <div id="Icon-container3">     
+          <i  id="Icon" class="fa-solid fa-right-left"></i></i>
+          <div id="Icon-Text3"><p1 style="font-size:3vmax; color:#75E6DA; line-height:20%;">Easy Returns And Replacements</p1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lacinia urna. Duis turpis ante, egestas nec eleifend iaculis, sollicitudin efficitur purus.</p></div></div>
+    </div></div>
+    <br>
+    <br>
+    <br>
+    <div id="YT"><iframe width="560" height="315" src="https://www.youtube.com/embed/bc1q4j-8aIg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+      
+     <!--Cards-->
+     <br>
+     <br>
+     <br>
+     <br>
+     <div class="class-container">
+      <div class="card">
+
+        <div class="image">
+           <img src="https://wcm-cdn.wacom.com/-/media/images/carousels/homepage-a-slots/2020/2020%20image%20redux/wacom-cintiq-homepage-m_mobile.jpg?h=450&la=en&w=726&rev=f0b46c69f545450a899216df01285b57&hash=FF439116332498B22C19DDAA448007E1">
+        </div>
+        <div class="title">
+         <h1 style="font-size:2.6vmax;">
+        Display Tablets</h1>
+        </div>
+        <div class="des">
+         <p>Draw right on your screen</p>
+        <button>Read More...</button>
+        </div>
+        </div>
+     
+
+     <div class="card">
+
+      <div class="image">
+         <img src="https://cdn.vox-cdn.com/thumbor/H_SZgVOcYaFun2pYwuy5FzWEI6U=/0x0:2040x1360/1400x933/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/66273556/akrales_190503_3402_0013.0.jpg">
+      </div>
+      <div class="title">
+       <h1 style="font-size:2.6vmax;">
+      Graphic Tablets</h1>
+      </div>
+      <div class="des">
+       <p>Can't go wrong with this classic device</p>
+      <button>Read More...</button>
+      </div>
+      </div>
+
+      <div class="card">
+
+        <div class="image">
+           <img src="https://www.pbtech.co.nz/imgprod/H/H/HHAWCM1173222__2.jpg">
+        </div>
+        <div class="title">
+         <h1 style="font-size:2.6vmax;">
+        Accessories</h1>
+        </div>
+        <div class="des">
+         <p>Your beautiful tablet needs some beautiful friends</p>
+        <button>Read More...</button>
+        </div>
+        </div>
+   </div>
+</body>
+</html>
